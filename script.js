@@ -1,90 +1,112 @@
-const copy = {
- it: {
-  navProjects:"Progetti",navSkills:"Competenze",navAbout:"Chi sono",navContact:"Contatti",
-  heroEyebrow:"PORTFOLIO PERSONALE",heroTitle:"Creo progetti digitali<br>con <span>idee chiare.</span>",
-  heroDescription:"Sono Dani. Realizzo siti web e piccoli strumenti software, con attenzione alla struttura, alla semplicità e a come le persone li utilizzano.",
-  heroProjects:"Esplora i progetti",heroGithub:"Profilo GitHub",heroFootnote:"Progetti personali · Web · Software",
-  asideCaption:"Dalla prima idea a qualcosa che funziona.",ribbonLabel:"TECNOLOGIE",
-  projectsEyebrow:"UNA SELEZIONE",projectsTitle:"Progetti, non solo idee.",
-  projectsIntro:"Una selezione di lavori personali e sperimentazioni. Ogni progetto nasce per mettere in pratica competenze e imparare qualcosa di nuovo.",
-  personalProject:"PROGETTO PERSONALE",inDevelopment:"IN SVILUPPO",
-  mailflowDescription:"Un'applicazione web per organizzare e analizzare le email. Un progetto in evoluzione che mi permette di lavorare su interfaccia, gestione dei dati e integrazione di servizi email.",
-  tagIntegrations:"Integrazioni",tagData:"Gestione dati",privateProject:"Progetto personale · Codice non pubblico",
-  demoProject:"PROGETTO DIMOSTRATIVO",completedDemo:"DEMO COMPLETA",
-  lumeDescription:"Sito web dimostrativo per un ristorante italiano contemporaneo. Comprende identità visiva, menu interattivo, galleria e layout responsive; realizzato con supporto AI.",
-  visitProject:"Visita il progetto",
-  projectsDisclaimer:"Mailflow è un progetto personale in sviluppo. LUME è un esercizio dimostrativo: il ristorante è immaginario e il sito è stato realizzato con supporto AI.",
-  servicesEyebrow:"COSA POSSO FARE",servicesTitle:"Diamo forma<br>alla tua idea.",
-  servicesIntro:"Preferisco progetti chiari e ben definiti, con obiettivi concreti e dimensioni adatte al lavoro da svolgere.",
-  serviceOneTitle:"Siti web e landing page",serviceOneText:"Pagine semplici e curate per presentare un'attività, un servizio o un progetto.",
-  serviceTwoTitle:"Miglioramenti HTML e CSS",serviceTwoText:"Interventi su struttura, impaginazione e visualizzazione da smartphone.",
-  serviceThreeTitle:"Piccoli strumenti Python",serviceThreeText:"Programmi essenziali per organizzare informazioni o semplificare attività circoscritte.",
-  skillsEyebrow:"STRUMENTI DI LAVORO",skillsTitle:"Le tecnologie<br>che utilizzo.",
-  skillsDescription:"Una base pratica che continuo ad ampliare attraverso progetti personali ed esercizio.",
-  aboutEyebrow:"QUALCOSA SU DI ME",aboutTitle:"Imparare facendo.",
-  aboutText:"Mi piace capire come funzionano gli strumenti digitali e trasformare le idee in progetti concreti. Sviluppo progetti personali per consolidare le mie competenze e affrontare problemi sempre diversi.",
-  aboutTextTwo:"Cerco di dare a ogni lavoro una struttura chiara, un'interfaccia ordinata e uno scopo preciso.",
-  aboutGithub:"Scopri il mio GitHub",contactEyebrow:"IL PROSSIMO PROGETTO",contactTitle:"Hai un'idea<br>da realizzare?",
-  contactText:"Vuoi vedere cosa sto costruendo? Sul mio profilo GitHub trovi i progetti e gli aggiornamenti sul mio lavoro.",
-  contactButton:"Vai al profilo GitHub",footerText:"Portfolio personale · Web & Software",
-  backTop:"Torna all'inizio ↑",footerNote:"Progetti personali e dimostrativi, descritti come tali."
- },
- en: {
-  navProjects:"Projects",navSkills:"Skills",navAbout:"About",navContact:"Contact",
-  heroEyebrow:"PERSONAL PORTFOLIO",heroTitle:"I build digital projects<br>with <span>clear ideas.</span>",
-  heroDescription:"I'm Dani. I build websites and small software tools, paying attention to structure, simplicity and the way people use them.",
-  heroProjects:"Explore projects",heroGithub:"GitHub profile",heroFootnote:"Personal projects · Web · Software",
-  asideCaption:"From a first idea to something that works.",ribbonLabel:"TECHNOLOGIES",
-  projectsEyebrow:"SELECTED WORK",projectsTitle:"Projects, not just ideas.",
-  projectsIntro:"A selection of personal projects and experiments. Each one is a way to put skills into practice and learn something new.",
-  personalProject:"PERSONAL PROJECT",inDevelopment:"IN DEVELOPMENT",
-  mailflowDescription:"A web application for organising and analysing emails. An evolving project that lets me work on interfaces, data management and email service integrations.",
-  tagIntegrations:"Integrations",tagData:"Data management",privateProject:"Personal project · Source code is private",
-  demoProject:"DEMO PROJECT",completedDemo:"COMPLETED DEMO",
-  lumeDescription:"A demo website for a contemporary Italian restaurant. It includes a visual identity, interactive menu, gallery and responsive layout; built with AI assistance.",
-  visitProject:"View the project",
-  projectsDisclaimer:"Mailflow is a personal project in development. LUME is a demo: the restaurant is fictional and the website was built with AI assistance.",
-  servicesEyebrow:"WHAT I CAN DO",servicesTitle:"Let's shape<br>your idea.",
-  servicesIntro:"I prefer clear, well-defined projects with practical goals and a scope that fits the work involved.",
-  serviceOneTitle:"Websites and landing pages",serviceOneText:"Simple, carefully designed pages for a business, service or project.",
-  serviceTwoTitle:"HTML and CSS improvements",serviceTwoText:"Changes to layout, structure and mobile presentation.",
-  serviceThreeTitle:"Small Python tools",serviceThreeText:"Simple programs to organise information or streamline well-defined tasks.",
-  skillsEyebrow:"TOOLS I USE",skillsTitle:"Technologies<br>I work with.",
-  skillsDescription:"A practical foundation that I keep building through personal projects and practice.",
-  aboutEyebrow:"A LITTLE ABOUT ME",aboutTitle:"Learning by building.",
-  aboutText:"I enjoy understanding how digital tools work and turning ideas into practical projects. I build personal projects to strengthen my skills and work through different kinds of problems.",
-  aboutTextTwo:"I aim to give every project a clear structure, an organised interface and a specific purpose.",
-  aboutGithub:"Explore my GitHub",contactEyebrow:"THE NEXT PROJECT",contactTitle:"Have an idea<br>to build?",
-  contactText:"Want to see what I'm building? My GitHub profile is where you can find my projects and updates.",
-  contactButton:"Visit my GitHub profile",footerText:"Personal portfolio · Web & Software",
-  backTop:"Back to top ↑",footerNote:"Personal and demo projects, clearly described as such."
- }
+const translations = {
+  it: {
+    navWork:"Progetti", navWhat:"Cosa faccio", navAbout:"Profilo",
+    heroLabel:"PORTFOLIO PERSONALE",
+    heroTitle:"Progetti web e software,<br><span>costruiti con cura.</span>",
+    heroText:"Sono Dani. Mi piace trasformare idee in progetti digitali: siti web chiari, strumenti semplici e soluzioni pensate per essere utilizzate davvero.",
+    heroButton:"Scopri i progetti", githubProfile:"Profilo GitHub",
+    summaryLabel:"DUE AMBITI, UNA STESSA CURIOSITÀ",
+    summaryWeb:"Siti, interfacce e pagine responsive",
+    summarySoftware:"Strumenti e piccoli programmi",
+    summaryFoot:"Imparare progettando e facendo.",
+    workLabel:"LAVORI SELEZIONATI", workTitle:"Quello su cui sto lavorando.",
+    workIntro:"Due progetti diversi, entrambi nati dalla voglia di progettare, costruire e migliorare qualcosa di concreto.",
+    personalProject:"PROGETTO PERSONALE", inProgress:"IN SVILUPPO",
+    mailflowText:"Un'applicazione web per ricevere, organizzare e analizzare le email. Un progetto in evoluzione che comprende interfaccia, gestione dei dati e integrazioni con servizi email.",
+    tagIntegrations:"Integrazioni", tagBackend:"Backend",
+    mailflowNote:"Progetto personale · Codice sorgente privato",
+    demoProject:"PROGETTO DIMOSTRATIVO", demoReady:"DEMO COMPLETA",
+    lumeText:"Sito dimostrativo per un ristorante italiano immaginario. Comprende identità visiva, menu interattivo, galleria fotografica e layout responsive. Realizzato con supporto AI.",
+    openProject:"Apri il progetto",
+    workNote:"Mailflow è un progetto personale in sviluppo. LUME è un esercizio dimostrativo, non un lavoro commissionato da un cliente.",
+    whatLabel:"SU COSA POSSO LAVORARE", whatTitle:"Dalle pagine web<br>ai piccoli strumenti.",
+    whatIntro:"Mi interessano soprattutto progetti di dimensioni contenute, con una richiesta chiara e un risultato concreto.",
+    offerOneTitle:"Siti vetrina e landing page", offerOneText:"Pagine web semplici, ordinate e adattate anche agli schermi più piccoli.",
+    offerTwoTitle:"Modifiche e miglioramenti web", offerTwoText:"Piccoli interventi su HTML e CSS, layout e presentazione dei contenuti.",
+    offerThreeTitle:"Piccoli programmi Python", offerThreeText:"Strumenti essenziali per organizzare informazioni o semplificare un'attività specifica.",
+    profileLabel:"PROFILO", profileTitle:"Imparo costruendo.",
+    profileText:"Mi piace capire come funzionano le cose e provare a realizzarle. Lavorare ai miei progetti mi permette di imparare, incontrare problemi reali e trovare il modo di risolverli.",
+    profileTextTwo:"Non considero un progetto finito solo perché funziona: per me contano anche chiarezza, ordine e facilità d'uso.",
+    moreGithub:"Altri progetti su GitHub", skillsTitle:"TECNOLOGIE CHE UTILIZZO",
+    skillHtml:"Struttura delle pagine", skillCss:"Stile e layout responsive",
+    skillPython:"Programmi e piccoli strumenti", skillGit:"Versionamento e repository",
+    contactLabel:"CONTATTI", contactTitle:"Hai un progetto<br>in mente?",
+    contactText:"Puoi vedere i progetti che sto sviluppando e contattarmi attraverso il mio profilo GitHub.",
+    contactButton:"Vai al mio GitHub", footerDescription:"Portfolio personale · Web & Software",
+    backTop:"Torna all'inizio ↑", footerNote:"Progetti personali e dimostrativi, presentati come tali."
+  },
+  en: {
+    navWork:"Projects", navWhat:"What I do", navAbout:"About",
+    heroLabel:"PERSONAL PORTFOLIO",
+    heroTitle:"Web and software projects,<br><span>built with care.</span>",
+    heroText:"I'm Dani. I enjoy turning ideas into digital projects: clear websites, simple tools and solutions designed to be genuinely useful.",
+    heroButton:"Explore projects", githubProfile:"GitHub profile",
+    summaryLabel:"TWO FIELDS, ONE CURIOSITY",
+    summaryWeb:"Websites, interfaces and responsive pages",
+    summarySoftware:"Tools and small applications",
+    summaryFoot:"Learning by designing and building.",
+    workLabel:"SELECTED WORK", workTitle:"What I'm working on.",
+    workIntro:"Two different projects, both driven by the desire to design, build and improve something tangible.",
+    personalProject:"PERSONAL PROJECT", inProgress:"IN DEVELOPMENT",
+    mailflowText:"A web application for receiving, organising and analysing emails. An ongoing project involving interfaces, data management and email service integrations.",
+    tagIntegrations:"Integrations", tagBackend:"Backend",
+    mailflowNote:"Personal project · Source code is private",
+    demoProject:"DEMO PROJECT", demoReady:"COMPLETED DEMO",
+    lumeText:"A demo website for a fictional Italian restaurant. It includes a visual identity, interactive menu, photo gallery and responsive layout. Built with AI assistance.",
+    openProject:"Open the project",
+    workNote:"Mailflow is a personal project in development. LUME is a demo project, not commissioned client work.",
+    whatLabel:"WHAT I CAN WORK ON", whatTitle:"From websites<br>to small tools.",
+    whatIntro:"I'm especially interested in small, clearly scoped projects with a practical goal and a tangible result.",
+    offerOneTitle:"Business websites and landing pages", offerOneText:"Simple, organised web pages that adapt to smaller screens.",
+    offerTwoTitle:"Website updates and improvements", offerTwoText:"Small changes to HTML, CSS, layouts and content presentation.",
+    offerThreeTitle:"Small Python programs", offerThreeText:"Simple tools to organise information or streamline a specific task.",
+    profileLabel:"ABOUT", profileTitle:"Learning by building.",
+    profileText:"I enjoy understanding how things work and trying to build them. Working on personal projects helps me learn, encounter real problems and find ways to solve them.",
+    profileTextTwo:"A project isn't finished just because it works: clarity, organisation and ease of use matter too.",
+    moreGithub:"More projects on GitHub", skillsTitle:"TECHNOLOGIES I USE",
+    skillHtml:"Page structure", skillCss:"Styling and responsive layouts",
+    skillPython:"Programs and small tools", skillGit:"Version control and repositories",
+    contactLabel:"CONTACT", contactTitle:"Have a project<br>in mind?",
+    contactText:"You can explore the projects I'm building and reach me through my GitHub profile.",
+    contactButton:"Visit my GitHub", footerDescription:"Personal portfolio · Web & Software",
+    backTop:"Back to top ↑", footerNote:"Personal and demo projects, clearly presented as such."
+  }
 };
 
-const languageButtons = document.querySelectorAll("[data-lang]");
 function setLanguage(language) {
- document.documentElement.lang = language;
- document.querySelectorAll("[data-i18n]").forEach((element) => {
-  const key = element.dataset.i18n;
-  if (copy[language][key]) element.innerHTML = copy[language][key];
- });
- languageButtons.forEach((button) => {
-  const selected = button.dataset.lang === language;
-  button.classList.toggle("active", selected);
-  button.setAttribute("aria-pressed", String(selected));
- });
-}
-languageButtons.forEach((button) => button.addEventListener("click", () => setLanguage(button.dataset.lang)));
+  document.documentElement.lang = language;
 
-const toggle = document.querySelector(".nav-toggle");
-const navLinks = document.querySelector(".nav-links");
-toggle.addEventListener("click", () => {
- const open = toggle.getAttribute("aria-expanded") === "true";
- toggle.setAttribute("aria-expanded", String(!open));
- navLinks.classList.toggle("open", !open);
+  document.querySelectorAll("[data-i18n]").forEach((element) => {
+    const key = element.dataset.i18n;
+    const translated = translations[language][key];
+    if (translated) element.innerHTML = translated;
+  });
+
+  document.querySelectorAll("[data-lang]").forEach((button) => {
+    const active = button.dataset.lang === language;
+    button.classList.toggle("active", active);
+    button.setAttribute("aria-pressed", String(active));
+  });
+}
+
+document.querySelectorAll("[data-lang]").forEach((button) => {
+  button.addEventListener("click", () => setLanguage(button.dataset.lang));
 });
-navLinks.querySelectorAll("a").forEach((link) => link.addEventListener("click", () => {
- navLinks.classList.remove("open");
- toggle.setAttribute("aria-expanded", "false");
-}));
+
+const menuToggle = document.querySelector(".menu-toggle");
+const navMenu = document.querySelector(".nav-menu");
+
+menuToggle.addEventListener("click", () => {
+  const open = menuToggle.getAttribute("aria-expanded") === "true";
+  menuToggle.setAttribute("aria-expanded", String(!open));
+  navMenu.classList.toggle("open", !open);
+});
+
+navMenu.querySelectorAll("a").forEach((link) => {
+  link.addEventListener("click", () => {
+    navMenu.classList.remove("open");
+    menuToggle.setAttribute("aria-expanded", "false");
+  });
+});
+
 document.getElementById("year").textContent = new Date().getFullYear();
