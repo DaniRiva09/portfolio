@@ -1,21 +1,35 @@
-# Portfolio — Dani
+# Dani — Web & Software Portfolio
 
-Sito portfolio personale realizzato con HTML e CSS, senza framework e senza dipendenze esterne.
+Portfolio personale, realizzato con HTML, CSS e JavaScript vanilla.
 
-## Pubblicazione con GitHub Pages
+## Pubblicazione GitHub Pages
 
-1. Apri **Settings** del repository.
-2. Vai a **Pages** nel menu laterale.
-3. In **Build and deployment**, scegli **Deploy from a branch**.
-4. Seleziona il branch **main** e la cartella **/(root)**.
-5. Premi **Save**.
+Configurazione attesa in **Settings → Pages**:
 
-Dopo la pubblicazione, il sito sarà disponibile all'indirizzo:
+- Source: **Deploy from a branch**
+- Branch: **main**
+- Folder: **/(root)**
 
-https://daniriva09.github.io/portfolio/
+Indirizzi:
+- Portfolio: https://daniriva09.github.io/portfolio/
+- Progetto dimostrativo LUME: https://daniriva09.github.io/portfolio/lume/
 
-Le modifiche a `index.html` e `style.css` vengono pubblicate automaticamente quando vengono salvate su `main`.
+La cartella `lume/` contiene il sito dimostrativo del ristorante. Il file `lume/index.html` è la sua pagina iniziale.
 
-## Personalizzazione
+## Progetti
 
-Prima di condividere il portfolio con potenziali clienti, completa e verifica i recapiti che desideri rendere pubblici. Al momento il pulsante di contatto porta al profilo GitHub.
+- **Mailflow** — applicazione web personale in sviluppo; il codice sorgente non è pubblico.
+- **LUME** — sito dimostrativo per un ristorante immaginario, realizzato con supporto AI. Menu, orari, località e richieste sono fittizi; il modulo non invia né salva dati.
+
+I piccoli esercizi Python non sono inclusi nella selezione pubblica perché al momento sono progetti introduttivi e non rappresentano ancora il livello di lavoro che voglio mostrare.
+
+## File principali
+
+- `index.html` — contenuti del portfolio
+- `style.css` — layout e stile responsive
+- `script.js` — cambio lingua e navigazione mobile
+- `lume/` — progetto dimostrativo indipendente
+
+## Se il sito restituisce 404
+
+Verificare in **Settings → Pages** che la sorgente sia `main` e `/(root)`. Poi aprire la scheda **Actions** e controllare il workflow **pages build and deployment**: deve risultare completato con esito positivo. Una modifica a questo repository avvia una nuova pubblicazione.
