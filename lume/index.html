@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f2ede4">
+  <meta name="description" content="LUME — progetto dimostrativo di sito web per un ristorante italiano contemporaneo.">
+  <title>LUME — Cucina italiana contemporanea</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="demo-ribbon" data-i18n="demoRibbon">PROGETTO DIMOSTRATIVO · RISTORANTE FITTIZIO</div>
+
+  <header class="site-header">
+    <nav class="nav shell" aria-label="Navigazione principale">
+      <a class="brand" href="#home" aria-label="LUME, homepage">
+        <span class="brand-name">LUME</span>
+        <span class="brand-sub" data-i18n="brandSub">RISTORANTE · CUCINA CONTEMPORANEA</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Apri il menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span>
+      </button>
+      <div class="nav-links" id="navLinks">
+        <a href="#filosofia" data-i18n="navStory">La filosofia</a>
+        <a href="#menu" data-i18n="navMenu">Menu</a>
+        <a href="#ambiente" data-i18n="navSpace">L'ambiente</a>
+        <a class="nav-book" href="#prenota"><span data-i18n="navBook">Prenota un tavolo</span><span aria-hidden="true">↗</span></a>
+        <div class="language-switch" aria-label="Seleziona la lingua">
+          <button type="button" class="active" data-lang="it" aria-pressed="true">IT</button>
+          <span>/</span>
+          <button type="button" data-lang="en" aria-pressed="false">EN</button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-line"></span><span data-i18n="heroEyebrow">UNA CUCINA, MOLTE STORIE</span></p>
+        <h1 data-i18n="heroTitle">La tradizione,<br><em>con un'altra luce.</em></h1>
+        <p class="hero-description" data-i18n="heroDescription">Ingredienti scelti con cura, ricette che guardano avanti e il piacere semplice di ritrovarsi a tavola.</p>
+        <div class="hero-actions">
+          <a class="button button-dark" href="#menu"><span data-i18n="heroMenu">Scopri il menu</span><span aria-hidden="true">↓</span></a>
+          <a class="underlined-link" href="#filosofia"><span data-i18n="heroStory">La nostra idea di cucina</span><span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="hero-footnote"><span class="small-star">✳</span><span data-i18n="heroFootnote">Cucina italiana contemporanea · Menu stagionale</span></div>
+      </div>
+      <div class="hero-visual">
+        <img class="hero-image" src="https://images.unsplash.com/photo-1760390952355-a6b9cf50a7a2?auto=format&fit=crop&w=1400&q=85" alt="Piatto di pasta preparato con ingredienti freschi" fetchpriority="high">
+        <div class="image-stamp"><span data-i18n="stampTop">FATTO CON</span><strong>cura.</strong><span data-i18n="stampBottom">SERVITO CON CALMA</span></div>
+        <span class="image-index">01 — 04</span>
+      </div>
+    </section>
+
+    <div class="running-line" aria-label="Buon cibo, tempo lento, persone a tavola">
+      <div class="running-track">
+        <span data-i18n="marquee">BUON CIBO</span><i>✳</i><span data-i18n="marquee2">TEMPO LENTO</span><i>✳</i><span data-i18n="marquee3">PERSONE A TAVOLA</span><i>✳</i><span data-i18n="marquee">BUON CIBO</span><i>✳</i><span data-i18n="marquee2">TEMPO LENTO</span><i>✳</i><span data-i18n="marquee3">PERSONE A TAVOLA</span><i>✳</i>
+      </div>
+    </div>
+
+    <section class="story section-shell" id="filosofia">
+      <div class="story-image-wrap">
+        <img src="https://images.unsplash.com/photo-1751563820356-a62570b187ea?auto=format&fit=crop&w=1100&q=85" alt="Sala di un ristorante contemporaneo con dettagli in legno e luce calda" loading="lazy">
+        <span class="photo-caption" data-i18n="storyPhotoCaption">UN LUOGO IN CUI RESTARE</span>
+      </div>
+      <div class="story-copy">
+        <p class="eyebrow"><span class="eyebrow-line"></span><span data-i18n="storyEyebrow">LA FILOSOFIA DI LUME</span></p>
+        <h2 data-i18n="storyTitle">Le cose buone<br>hanno bisogno<br><em>di tempo.</em></h2>
+        <p data-i18n="storyParagraph1">Ci piacciono le materie prime riconoscibili, le stagioni che cambiano e le ricette che sanno sorprendere senza perdere la propria anima.</p>
+        <p data-i18n="storyParagraph2">In cucina partiamo dalla tradizione italiana e la lasciamo dialogare con nuove idee. In sala, crediamo nei dettagli gentili e nell'accoglienza senza formalità.</p>
+        <div class="signature"><span class="signature-mark">L.</span><span data-i18n="signature">La cucina è un gesto di attenzione.</span></div>
+      </div>
+    </section>
+
+    <section class="menu-section" id="menu">
+      <div class="section-shell menu-inner">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow"><span class="eyebrow-line"></span><span data-i18n="menuEyebrow">DALLA NOSTRA CUCINA</span></p>
+            <h2 data-i18n="menuTitle">Un menu che segue<br><em>le stagioni.</em></h2>
+          </div>
+          <p class="section-intro" data-i18n="menuIntro">Pochi ingredienti, scelti bene. Piatti familiari che si concedono una nuova interpretazione.</p>
+        </div>
+
+        <div class="menu-tabs" role="tablist" aria-label="Categorie del menu">
+          <button class="menu-tab active" type="button" role="tab" aria-selected="true" data-category="antipasti" data-i18n="tabStarters">Antipasti</button>
+          <button class="menu-tab" type="button" role="tab" aria-selected="false" data-category="primi" data-i18n="tabPasta">Primi</button>
+          <button class="menu-tab" type="button" role="tab" aria-selected="false" data-category="secondi" data-i18n="tabMains">Secondi</button>
+          <button class="menu-tab" type="button" role="tab" aria-selected="false" data-category="dolci" data-i18n="tabDesserts">Dolci</button>
+        </div>
+        <div class="menu-list" id="menuList" aria-live="polite"></div>
+        <p class="menu-note"><span>✳</span><span data-i18n="menuNote">Menu e prezzi di esempio, creati esclusivamente per questo progetto dimostrativo.</span></p>
+      </div>
+    </section>
+
+    <section class="seasonal-feature">
+      <div class="seasonal-image">
+        <img src="https://images.unsplash.com/photo-1750943082231-0d84cfabc4dd?auto=format&fit=crop&w=1300&q=85" alt="Piatto creativo presentato con cura" loading="lazy">
+      </div>
+      <div class="seasonal-copy">
+        <p class="eyebrow"><span class="eyebrow-line"></span><span data-i18n="seasonEyebrow">IL RITMO DELLE STAGIONI</span></p>
+        <h2 data-i18n="seasonTitle">Ogni stagione<br>porta <em>qualcosa<br>di nuovo.</em></h2>
+        <p data-i18n="seasonText">Il menu cambia con quello che la terra e il mare hanno da offrire. Per questo ogni visita può avere un sapore diverso.</p>
+        <a class="underlined-link" href="#menu"><span data-i18n="seasonLink">Dai un'occhiata al menu</span><span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+
+    <section class="space-section section-shell" id="ambiente">
+      <div class="section-heading space-heading">
+        <div>
+          <p class="eyebrow"><span class="eyebrow-line"></span><span data-i18n="spaceEyebrow">IL PIACERE DI STARE INSIEME</span></p>
+          <h2 data-i18n="spaceTitle">Un tavolo, una sera,<br><em>il tempo per sé.</em></h2>
+        </div>
+        <p class="section-intro" data-i18n="spaceIntro">Un ambiente raccolto, materiali naturali e luci morbide. Un posto in cui sentirsi a proprio agio, dal primo all'ultimo piatto.</p>
+      </div>
+      <div class="gallery-grid">
+        <figure class="gallery-large">
+          <img src="https://images.unsplash.com/photo-1764253422050-198df300772c?auto=format&fit=crop&w=1200&q=85" alt="Sala di ristorante illuminata da luci calde" loading="lazy">
+          <figcaption data-i18n="galleryOne">La sala, quando arriva sera</figcaption>
+        </figure>
+        <figure class="gallery-small">
+          <img src="https://images.unsplash.com/photo-1714385988516-85f063e4fcdb?auto=format&fit=crop&w=900&q=85" alt="Ingredienti e pasta fresca su un tavolo di legno" loading="lazy">
+          <figcaption data-i18n="galleryTwo">Ingredienti semplici, scelti bene</figcaption>
+        </figure>
+        <div class="gallery-note">
+          <span class="gallery-star">✳</span>
+          <p data-i18n="galleryQuote">“La parte migliore della giornata? Quando ci si siede tutti a tavola.”</p>
+          <span class="gallery-note-small">LUME · <span data-i18n="galleryNote">A TAVOLA, INSIEME</span></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="visit-section" id="prenota">
+      <div class="section-shell visit-inner">
+        <div class="visit-copy">
+          <p class="eyebrow"><span class="eyebrow-line"></span><span data-i18n="visitEyebrow">CI VEDIAMO A TAVOLA</span></p>
+          <h2 data-i18n="visitTitle">La tavola è pronta.<br><em>Manca solo tu.</em></h2>
+          <p data-i18n="visitText">Per una cena speciale o una serata senza un motivo particolare: scegli il momento e manda una richiesta.</p>
+          <div class="visit-details">
+            <div><span class="detail-label" data-i18n="hoursLabel">ORARI DI ESEMPIO</span><strong data-i18n="hoursValue">Mar — Dom · 19:00 — 23:00</strong><small data-i18n="hoursExtra">Sabato e domenica anche a pranzo</small></div>
+            <div><span class="detail-label" data-i18n="placeLabel">DOVE SIAMO</span><strong data-i18n="placeValue">Torino, Italia</strong><small data-i18n="placeExtra">Posizione indicativa per il progetto demo</small></div>
+          </div>
+        </div>
+        <form class="booking-form" id="bookingForm">
+          <p class="form-kicker" data-i18n="formKicker">IL TUO TAVOLO</p>
+          <h3 data-i18n="formTitle">Invia una richiesta</h3>
+          <div class="form-row">
+            <label><span data-i18n="nameLabel">Nome</span><input type="text" name="name" autocomplete="name" placeholder="Il tuo nome" data-i18n-placeholder="namePlaceholder" required></label>
+            <label><span data-i18n="peopleLabel">Persone</span><select name="people" required><option value="2">2</option><option value="1">1</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6+</option></select></label>
+          </div>
+          <div class="form-row">
+            <label><span data-i18n="dateLabel">Data</span><input type="date" name="date" required></label>
+            <label><span data-i18n="timeLabel">Orario</span><select name="time" required><option value="19:00">19:00</option><option value="19:30">19:30</option><option value="20:00">20:00</option><option value="20:30">20:30</option><option value="21:00">21:00</option></select></label>
+          </div>
+          <label><span data-i18n="emailLabel">Email</span><input type="email" name="email" autocomplete="email" placeholder="nome@email.com" required></label>
+          <button class="button button-dark form-submit" type="submit"><span data-i18n="sendRequest">Invia richiesta demo</span><span aria-hidden="true">↗</span></button>
+          <p class="form-disclaimer" data-i18n="formDisclaimer">Demo interattiva: i dati non vengono inviati né salvati.</p>
+          <p class="form-message" id="formMessage" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="section-shell footer-top">
+      <a class="footer-brand" href="#home">LUME<span>.</span></a>
+      <p data-i18n="footerLine">Cucina italiana contemporanea, con un'altra luce.</p>
+      <a class="back-top" href="#home" data-i18n="backTop">Torna su ↑</a>
+    </div>
+    <div class="section-shell footer-bottom">
+      <span>© LUME · <span data-i18n="footerDemo">Progetto dimostrativo</span></span>
+      <span data-i18n="footerNotice">Ristorante immaginario · Nessun servizio reale o prenotazione attiva</span>
+      <a href="README.md" data-i18n="photoCredits">Crediti fotografici</a>
+    </div>
+  </footer>
+</body>
+</html>
