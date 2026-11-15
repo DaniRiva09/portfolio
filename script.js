@@ -25,7 +25,7 @@ const copy = {
   aboutText:"Mi piace capire come funzionano gli strumenti digitali e trasformare le idee in progetti concreti. Sviluppo progetti personali per consolidare le mie competenze e affrontare problemi sempre diversi.",
   aboutTextTwo:"Cerco di dare a ogni lavoro una struttura chiara, un'interfaccia ordinata e uno scopo preciso.",
   aboutGithub:"Scopri il mio GitHub",contactEyebrow:"IL PROSSIMO PROGETTO",contactTitle:"Hai un'idea<br>da realizzare?",
-  contactText:"Per ora puoi esplorare i miei progetti e seguire quello che sto costruendo su GitHub. Un recapito professionale dedicato verrà aggiunto prima di usare questa pagina per richieste di lavoro.",
+  contactText:"Vuoi vedere cosa sto costruendo? Sul mio profilo GitHub trovi i progetti e gli aggiornamenti sul mio lavoro.",
   contactButton:"Vai al profilo GitHub",footerText:"Portfolio personale · Web & Software",
   backTop:"Torna all'inizio ↑",footerNote:"Progetti personali e dimostrativi, descritti come tali."
  },
@@ -55,7 +55,7 @@ const copy = {
   aboutText:"I enjoy understanding how digital tools work and turning ideas into practical projects. I build personal projects to strengthen my skills and work through different kinds of problems.",
   aboutTextTwo:"I aim to give every project a clear structure, an organised interface and a specific purpose.",
   aboutGithub:"Explore my GitHub",contactEyebrow:"THE NEXT PROJECT",contactTitle:"Have an idea<br>to build?",
-  contactText:"For now, you can explore my projects and follow what I'm building on GitHub. A dedicated professional contact address will be added before using this page for work enquiries.",
+  contactText:"Want to see what I'm building? My GitHub profile is where you can find my projects and updates.",
   contactButton:"Visit my GitHub profile",footerText:"Personal portfolio · Web & Software",
   backTop:"Back to top ↑",footerNote:"Personal and demo projects, clearly described as such."
  }
