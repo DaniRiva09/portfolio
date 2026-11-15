@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f5f4f0">
-  <meta name="description" content="Portfolio di Dani: progetti web, software e sviluppo di siti semplici, moderni e responsive.">
-  <title>Dani — Web & Software</title>
+  <meta name="theme-color" content="#f5f3ee">
+  <meta name="description" content="Portfolio personale di Dani Riva: progetti web, software e competenze in HTML, CSS e Python.">
+  <title>Dani Riva — Web & Software</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -13,20 +13,17 @@
   <script src="script.js" defer></script>
 </head>
 <body>
-  <header class="site-header">
+  <header class="header">
     <nav class="nav shell" aria-label="Navigazione principale">
-      <a class="brand" href="#home" aria-label="Dani, homepage">dani<span>.</span></a>
-      <button class="nav-toggle" type="button" aria-label="Apri il menu" aria-expanded="false" aria-controls="navLinks">
-        <span></span><span></span>
-      </button>
-      <div class="nav-links" id="navLinks">
-        <a href="#progetti" data-i18n="navProjects">Progetti</a>
-        <a href="#competenze" data-i18n="navSkills">Competenze</a>
-        <a href="#chi-sono" data-i18n="navAbout">Chi sono</a>
-        <a class="nav-contact" href="#contatti" data-i18n="navContact">Contatti <span aria-hidden="true">↗</span></a>
-        <div class="language-switch" aria-label="Select language">
-          <button type="button" class="active" data-lang="it" aria-pressed="true">IT</button>
-          <span>/</span>
+      <a class="brand" href="#home" aria-label="Dani Riva, homepage">dani<span>.</span></a>
+      <button class="menu-toggle" type="button" aria-label="Apri il menu" aria-expanded="false" aria-controls="nav-menu"><span></span><span></span></button>
+      <div class="nav-menu" id="nav-menu">
+        <a href="#progetti" data-i18n="navWork">Progetti</a>
+        <a href="#cosa-faccio" data-i18n="navWhat">Cosa faccio</a>
+        <a href="#profilo" data-i18n="navAbout">Profilo</a>
+        <a class="nav-github" href="https://github.com/DaniRiva09" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+        <div class="language" aria-label="Seleziona la lingua">
+          <button type="button" class="active" data-lang="it" aria-pressed="true">IT</button><span>/</span>
           <button type="button" data-lang="en" aria-pressed="false">EN</button>
         </div>
       </div>
@@ -35,146 +32,105 @@
 
   <main>
     <section class="hero shell" id="home">
-      <div class="hero-copy">
-        <p class="eyebrow"><span class="eyebrow-mark"></span><span data-i18n="heroEyebrow">PORTFOLIO PERSONALE</span></p>
-        <h1 data-i18n="heroTitle">Creo progetti digitali<br>con <span>idee chiare.</span></h1>
-        <p class="hero-description" data-i18n="heroDescription">Sono Dani. Realizzo siti web e piccoli strumenti software, con attenzione alla struttura, alla semplicità e a come le persone li utilizzano.</p>
+      <div class="hero-content">
+        <p class="eyebrow"><span class="eyebrow-dot"></span><span data-i18n="heroLabel">PORTFOLIO PERSONALE</span></p>
+        <h1 data-i18n="heroTitle">Progetti web e software,<br><span>costruiti con cura.</span></h1>
+        <p class="hero-text" data-i18n="heroText">Sono Dani. Mi piace trasformare idee in progetti digitali: siti web chiari, strumenti semplici e soluzioni pensate per essere utilizzate davvero.</p>
         <div class="hero-actions">
-          <a class="button button-primary" href="#progetti"><span data-i18n="heroProjects">Esplora i progetti</span><span aria-hidden="true">↓</span></a>
-          <a class="text-link" href="https://github.com/DaniRiva09" target="_blank" rel="noopener noreferrer"><span data-i18n="heroGithub">Profilo GitHub</span><span aria-hidden="true">↗</span></a>
+          <a class="button button-dark" href="#progetti"><span data-i18n="heroButton">Scopri i progetti</span><span aria-hidden="true">↓</span></a>
+          <a class="simple-link" href="https://github.com/DaniRiva09" target="_blank" rel="noopener noreferrer"><span data-i18n="githubProfile">Profilo GitHub</span><span aria-hidden="true">↗</span></a>
         </div>
-        <div class="hero-footnote"><span class="footnote-line"></span><span data-i18n="heroFootnote">Progetti personali · Web · Software</span></div>
       </div>
-      <div class="hero-aside" aria-label="Web and software projects">
-        <div class="aside-top"><span>IN COSA MI MUOVO</span><span class="aside-index">01 / 02</span></div>
-        <div class="aside-word">WEB<span>&</span><br>SOFTWARE<span class="aside-period">.</span></div>
-        <div class="aside-bottom">
-          <span data-i18n="asideCaption">Dalla prima idea a qualcosa che funziona.</span>
-          <span class="aside-symbol" aria-hidden="true">↗</span>
-        </div>
-        <div class="aside-ring ring-one"></div>
-        <div class="aside-ring ring-two"></div>
-      </div>
+      <aside class="hero-summary" aria-label="Ambiti di interesse">
+        <p class="summary-label" data-i18n="summaryLabel">DUE AMBITI, UNA STESSA CURIOSITÀ</p>
+        <div class="summary-item"><span class="summary-number">01</span><div><strong>Web</strong><p data-i18n="summaryWeb">Siti, interfacce e pagine responsive</p></div></div>
+        <div class="summary-item"><span class="summary-number">02</span><div><strong>Software</strong><p data-i18n="summarySoftware">Strumenti e piccoli programmi</p></div></div>
+        <div class="summary-foot" data-i18n="summaryFoot">Imparare progettando e facendo.</div>
+      </aside>
     </section>
 
-    <div class="skill-ribbon">
-      <div class="shell ribbon-inner">
-        <span data-i18n="ribbonLabel">TECNOLOGIE</span>
-        <div class="ribbon-items"><span>HTML</span><i>·</i><span>CSS</span><i>·</i><span>PYTHON</span><i>·</i><span>GIT & GITHUB</span></div>
-      </div>
-    </div>
-
-    <section class="projects section shell" id="progetti">
+    <section class="work section shell" id="progetti">
       <div class="section-heading">
-        <div>
-          <p class="eyebrow"><span class="eyebrow-mark"></span><span data-i18n="projectsEyebrow">UNA SELEZIONE</span></p>
-          <h2 data-i18n="projectsTitle">Progetti, non solo idee.</h2>
-        </div>
-        <p class="section-intro" data-i18n="projectsIntro">Una selezione di lavori personali e sperimentazioni. Ogni progetto nasce per mettere in pratica competenze e imparare qualcosa di nuovo.</p>
+        <div><p class="eyebrow"><span class="eyebrow-dot"></span><span data-i18n="workLabel">LAVORI SELEZIONATI</span></p><h2 data-i18n="workTitle">Quello su cui sto lavorando.</h2></div>
+        <p class="section-intro" data-i18n="workIntro">Due progetti diversi, entrambi nati dalla voglia di progettare, costruire e migliorare qualcosa di concreto.</p>
       </div>
 
       <div class="project-grid">
-        <article class="project-card project-mailflow">
-          <div class="project-art mail-art" aria-hidden="true">
-            <div class="mail-art-label">MAILFLOW / PERSONAL PROJECT</div>
-            <div class="mail-symbol"><span></span><i></i></div>
-            <div class="mail-art-lines"><b></b><b></b><b></b></div>
-            <span class="art-corner">MF.</span>
+        <article class="project-card">
+          <div class="project-visual mailflow-visual" aria-hidden="true">
+            <div class="visual-topline"><span>PERSONAL PROJECT</span><span>01 / 02</span></div>
+            <div class="mailflow-word">mailflow<span>.</span></div>
+            <div class="mailflow-caption">EMAIL MANAGEMENT</div>
+            <div class="mailflow-shape shape-one"></div><div class="mailflow-shape shape-two"></div>
           </div>
-          <div class="project-body">
-            <div class="project-meta"><span data-i18n="personalProject">PROGETTO PERSONALE</span><span class="project-status"><i></i><span data-i18n="inDevelopment">IN SVILUPPO</span></span></div>
+          <div class="project-content">
+            <div class="project-meta"><span data-i18n="personalProject">PROGETTO PERSONALE</span><span class="status status-progress"><i></i><span data-i18n="inProgress">IN SVILUPPO</span></span></div>
             <h3>Mailflow</h3>
-            <p data-i18n="mailflowDescription">Un'applicazione web per organizzare e analizzare le email. Un progetto in evoluzione che mi permette di lavorare su interfaccia, gestione dei dati e integrazione di servizi email.</p>
-            <div class="tag-list"><span>Web app</span><span data-i18n="tagIntegrations">Integrazioni</span><span data-i18n="tagData">Gestione dati</span></div>
-            <span class="project-note" data-i18n="privateProject">Progetto personale · Codice non pubblico</span>
+            <p data-i18n="mailflowText">Un'applicazione web per ricevere, organizzare e analizzare le email. Un progetto in evoluzione che comprende interfaccia, gestione dei dati e integrazioni con servizi email.</p>
+            <div class="tags"><span>Web app</span><span data-i18n="tagIntegrations">Integrazioni</span><span data-i18n="tagBackend">Backend</span></div>
+            <p class="project-footnote" data-i18n="mailflowNote">Progetto personale · Codice sorgente privato</p>
           </div>
         </article>
 
-        <article class="project-card project-lume">
-          <a class="project-image" href="./lume/" aria-label="Apri il progetto dimostrativo LUME">
-            <img src="https://images.unsplash.com/photo-1750943082231-0d84cfabc4dd?auto=format&fit=crop&w=1000&q=85" alt="Piatto di cucina contemporanea" loading="lazy">
-            <span class="image-overlay">LUME<span>↗</span></span>
+        <article class="project-card">
+          <a class="project-visual lume-visual" href="./lume/" aria-label="Apri il sito dimostrativo LUME">
+            <img src="https://images.unsplash.com/photo-1750943082231-0d84cfabc4dd?auto=format&fit=crop&w=1100&q=85" alt="Piatto di cucina italiana contemporanea" loading="lazy">
+            <span class="lume-mark">LUME<span>.</span></span><span class="visual-link" aria-hidden="true">↗</span>
           </a>
-          <div class="project-body">
-            <div class="project-meta"><span data-i18n="demoProject">PROGETTO DIMOSTRATIVO</span><span class="project-status status-demo"><i></i><span data-i18n="completedDemo">DEMO COMPLETA</span></span></div>
+          <div class="project-content">
+            <div class="project-meta"><span data-i18n="demoProject">PROGETTO DIMOSTRATIVO</span><span class="status status-demo"><i></i><span data-i18n="demoReady">DEMO COMPLETA</span></span></div>
             <h3>LUME</h3>
-            <p data-i18n="lumeDescription">Sito web dimostrativo per un ristorante italiano contemporaneo. Comprende identità visiva, menu interattivo, galleria e layout responsive; realizzato con supporto AI.</p>
-            <div class="tag-list"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
-            <a class="project-link" href="./lume/"><span data-i18n="visitProject">Visita il progetto</span><span aria-hidden="true">↗</span></a>
+            <p data-i18n="lumeText">Sito dimostrativo per un ristorante italiano immaginario. Comprende identità visiva, menu interattivo, galleria fotografica e layout responsive. Realizzato con supporto AI.</p>
+            <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            <a class="project-open" href="./lume/"><span data-i18n="openProject">Apri il progetto</span><span aria-hidden="true">↗</span></a>
           </div>
         </article>
       </div>
-      <p class="projects-disclaimer" data-i18n="projectsDisclaimer">Mailflow è un progetto personale in sviluppo. LUME è un esercizio dimostrativo: il ristorante è immaginario e il sito è stato realizzato con supporto AI.</p>
+      <p class="work-note" data-i18n="workNote">Mailflow è un progetto personale in sviluppo. LUME è un esercizio dimostrativo, non un lavoro commissionato da un cliente.</p>
     </section>
 
-    <section class="services-section" id="servizi">
+    <section class="what-section" id="cosa-faccio">
       <div class="section shell">
         <div class="section-heading">
-          <div>
-            <p class="eyebrow"><span class="eyebrow-mark"></span><span data-i18n="servicesEyebrow">COSA POSSO FARE</span></p>
-            <h2 data-i18n="servicesTitle">Diamo forma<br>alla tua idea.</h2>
-          </div>
-          <p class="section-intro" data-i18n="servicesIntro">Preferisco progetti chiari e ben definiti, con obiettivi concreti e dimensioni adatte al lavoro da svolgere.</p>
+          <div><p class="eyebrow"><span class="eyebrow-dot"></span><span data-i18n="whatLabel">SU COSA POSSO LAVORARE</span></p><h2 data-i18n="whatTitle">Dalle pagine web<br>ai piccoli strumenti.</h2></div>
+          <p class="section-intro" data-i18n="whatIntro">Mi interessano soprattutto progetti di dimensioni contenute, con una richiesta chiara e un risultato concreto.</p>
         </div>
-        <div class="services-grid">
-          <article class="service-item">
-            <span class="service-number">01</span>
-            <div><h3 data-i18n="serviceOneTitle">Siti web e landing page</h3><p data-i18n="serviceOneText">Pagine semplici e curate per presentare un'attività, un servizio o un progetto.</p></div>
-            <span class="service-arrow">↗</span>
-          </article>
-          <article class="service-item">
-            <span class="service-number">02</span>
-            <div><h3 data-i18n="serviceTwoTitle">Miglioramenti HTML e CSS</h3><p data-i18n="serviceTwoText">Interventi su struttura, impaginazione e visualizzazione da smartphone.</p></div>
-            <span class="service-arrow">↗</span>
-          </article>
-          <article class="service-item">
-            <span class="service-number">03</span>
-            <div><h3 data-i18n="serviceThreeTitle">Piccoli strumenti Python</h3><p data-i18n="serviceThreeText">Programmi essenziali per organizzare informazioni o semplificare attività circoscritte.</p></div>
-            <span class="service-arrow">↗</span>
-          </article>
+        <div class="offer-list">
+          <div class="offer-row"><span class="offer-number">01</span><div><h3 data-i18n="offerOneTitle">Siti vetrina e landing page</h3><p data-i18n="offerOneText">Pagine web semplici, ordinate e adattate anche agli schermi più piccoli.</p></div><span class="offer-arrow" aria-hidden="true">↗</span></div>
+          <div class="offer-row"><span class="offer-number">02</span><div><h3 data-i18n="offerTwoTitle">Modifiche e miglioramenti web</h3><p data-i18n="offerTwoText">Piccoli interventi su HTML e CSS, layout e presentazione dei contenuti.</p></div><span class="offer-arrow" aria-hidden="true">↗</span></div>
+          <div class="offer-row"><span class="offer-number">03</span><div><h3 data-i18n="offerThreeTitle">Piccoli programmi Python</h3><p data-i18n="offerThreeText">Strumenti essenziali per organizzare informazioni o semplificare un'attività specifica.</p></div><span class="offer-arrow" aria-hidden="true">↗</span></div>
         </div>
       </div>
     </section>
 
-    <section class="skills-about section shell" id="competenze">
-      <div class="skills-block">
-        <p class="eyebrow"><span class="eyebrow-mark"></span><span data-i18n="skillsEyebrow">STRUMENTI DI LAVORO</span></p>
-        <h2 data-i18n="skillsTitle">Le tecnologie<br>che utilizzo.</h2>
-        <p class="skills-description" data-i18n="skillsDescription">Una base pratica che continuo ad ampliare attraverso progetti personali ed esercizio.</p>
-        <div class="skill-list">
-          <span>HTML</span><span>CSS</span><span>Python</span><span>Git</span><span>GitHub</span>
-        </div>
+    <section class="profile section shell" id="profilo">
+      <div class="profile-copy">
+        <p class="eyebrow"><span class="eyebrow-dot"></span><span data-i18n="profileLabel">PROFILO</span></p>
+        <h2 data-i18n="profileTitle">Imparo costruendo.</h2>
+        <p data-i18n="profileText">Mi piace capire come funzionano le cose e provare a realizzarle. Lavorare ai miei progetti mi permette di imparare, incontrare problemi reali e trovare il modo di risolverli.</p>
+        <p data-i18n="profileTextTwo">Non considero un progetto finito solo perché funziona: per me contano anche chiarezza, ordine e facilità d'uso.</p>
+        <a class="simple-link" href="https://github.com/DaniRiva09" target="_blank" rel="noopener noreferrer"><span data-i18n="moreGithub">Altri progetti su GitHub</span><span aria-hidden="true">↗</span></a>
       </div>
-      <div class="about-block" id="chi-sono">
-        <p class="eyebrow"><span class="eyebrow-mark"></span><span data-i18n="aboutEyebrow">QUALCOSA SU DI ME</span></p>
-        <h2 data-i18n="aboutTitle">Imparare facendo.</h2>
-        <p data-i18n="aboutText">Mi piace capire come funzionano gli strumenti digitali e trasformare le idee in progetti concreti. Sviluppo progetti personali per consolidare le mie competenze e affrontare problemi sempre diversi.</p>
-        <p data-i18n="aboutTextTwo">Cerco di dare a ogni lavoro una struttura chiara, un'interfaccia ordinata e uno scopo preciso.</p>
-        <a class="text-link" href="https://github.com/DaniRiva09" target="_blank" rel="noopener noreferrer"><span data-i18n="aboutGithub">Scopri il mio GitHub</span><span aria-hidden="true">↗</span></a>
+      <div class="skills-panel">
+        <p class="skills-title" data-i18n="skillsTitle">TECNOLOGIE CHE UTILIZZO</p>
+        <div class="skill-line"><span>HTML</span><span data-i18n="skillHtml">Struttura delle pagine</span></div>
+        <div class="skill-line"><span>CSS</span><span data-i18n="skillCss">Stile e layout responsive</span></div>
+        <div class="skill-line"><span>Python</span><span data-i18n="skillPython">Programmi e piccoli strumenti</span></div>
+        <div class="skill-line"><span>Git / GitHub</span><span data-i18n="skillGit">Versionamento e repository</span></div>
       </div>
     </section>
 
-    <section class="contact-section" id="contatti">
+    <section class="contact-section">
       <div class="shell contact-inner">
-        <div>
-          <p class="eyebrow"><span class="eyebrow-mark"></span><span data-i18n="contactEyebrow">IL PROSSIMO PROGETTO</span></p>
-          <h2 data-i18n="contactTitle">Hai un'idea<br>da realizzare?</h2>
-        </div>
-        <div class="contact-copy">
-          <p data-i18n="contactText">Per ora puoi esplorare i miei progetti e seguire quello che sto costruendo su GitHub. Un recapito professionale dedicato verrà aggiunto prima di usare questa pagina per richieste di lavoro.</p>
-          <a class="button button-light" href="https://github.com/DaniRiva09" target="_blank" rel="noopener noreferrer"><span data-i18n="contactButton">Vai al profilo GitHub</span><span aria-hidden="true">↗</span></a>
-        </div>
+        <div><p class="eyebrow"><span class="eyebrow-dot"></span><span data-i18n="contactLabel">CONTATTI</span></p><h2 data-i18n="contactTitle">Hai un progetto<br>in mente?</h2></div>
+        <div class="contact-copy"><p data-i18n="contactText">Puoi vedere i progetti che sto sviluppando e contattarmi attraverso il mio profilo GitHub.</p><a class="button button-light" href="https://github.com/DaniRiva09" target="_blank" rel="noopener noreferrer"><span data-i18n="contactButton">Vai al mio GitHub</span><span aria-hidden="true">↗</span></a></div>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="shell footer-main">
-      <a class="brand footer-brand" href="#home">dani<span>.</span></a>
-      <p data-i18n="footerText">Portfolio personale · Web & Software</p>
-      <a href="#home" data-i18n="backTop">Torna all'inizio ↑</a>
-    </div>
-    <div class="shell footer-bottom"><span>© <span id="year"></span> Dani</span><span data-i18n="footerNote">Progetti personali e dimostrativi, descritti come tali.</span><a href="https://github.com/DaniRiva09" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div>
+  <footer class="footer">
+    <div class="shell footer-main"><a class="brand footer-brand" href="#home">dani<span>.</span></a><span data-i18n="footerDescription">Portfolio personale · Web & Software</span><a href="#home" data-i18n="backTop">Torna all'inizio ↑</a></div>
+    <div class="shell footer-bottom"><span>© <span id="year"></span> Dani Riva</span><span data-i18n="footerNote">Progetti personali e dimostrativi, presentati come tali.</span></div>
   </footer>
 </body>
 </html>
